@@ -1,0 +1,31 @@
+.navbarColor{
+    background-color: #22254b;
+}
+body{
+    background-color: #373b69;
+}
+.overview{
+    position:absolute;
+    left:0;
+    bottom:0;
+    opacity: 1;
+    display:none;
+}
+.movie:hover .overview{
+    opacity: 1;
+    display: block;
+    background-color: #ffff;
+    transition: opacity 0.9s ease-in-out;
+
+}
+function getClassByRate(vote){
+    if(vote>8){
+        return "green"
+    }
+    else if(vote>=5){
+        return "orange"
+    }
+    else{
+        return "red"
+    }
+}
